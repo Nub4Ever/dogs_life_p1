@@ -65,6 +65,7 @@ public class DogsRepositoryStub implements DogsRepository {
         long initialSize = itsDogs.size();
 
         itsDogs.removeIf(dog -> dog.getId() == aDog.getId());
+
         result = initialSize != itsDogs.size();
 
         return result;

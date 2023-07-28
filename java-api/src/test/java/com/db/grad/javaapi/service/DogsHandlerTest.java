@@ -115,7 +115,6 @@ public class DogsHandlerTest {
         cut.addDog( theDog3 );
 
         Dog expectedResult = null;
-
         Dog actualResult = cut.getDogByName("Bruno");
 
         assertEquals(expectedResult, actualResult);

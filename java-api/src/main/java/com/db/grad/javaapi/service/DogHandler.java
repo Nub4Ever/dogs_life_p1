@@ -25,10 +25,12 @@ public class DogHandler {
         dog.setName(name);
         List<Dog> dogs = itsDogRepo.findByName(dog);
 
+
         if (dogs.size() != 1) {
             return null;
         }
 
+        // return dog
         return dogs.get(0);
     }
 
